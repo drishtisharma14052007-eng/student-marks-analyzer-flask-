@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCULATING AVERAGE MARKS</h1>
+    <BR>
+        <!-- url_for ("shoul have function name not route name") -->
+    <form action="{{url_for('cal')}}" method="POST">
+        <label  id="maths">enter maths marks</label>
+        <BR>
+        <input type="text" name="maths" id="maths">
+        <BR>
+        <label  id="science">enter science marks</label>
+        <BR>
+        <input type="text" name="science" id="science">
+        <BR>
+        <label  id="sst">enter sst marks</label>
+        <BR>
+        <input type="text" name="sst" id="sst">
+        <BR>
+        <button type="submit" class="btn btn-primary btn-block btn-large">calculate average</button>
+        <br>
+        THE AVERAGE MARKS IS {{score}}
+    </form>
+</body>
+</html>
