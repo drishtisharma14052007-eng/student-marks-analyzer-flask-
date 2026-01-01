@@ -27,7 +27,7 @@ def cal():
        
            average_marks=(maths+science+sst)/3
        # calculates the average of the entered marks
-           return render_template('form.html',score=average_marks)#score=average_marks maps a Python variable to a template variable; the names don’t have to be the same.
+           return render_template("result.html",score=average_marks)#score=average_marks maps a Python variable to a template variable; the names don’t have to be the same.
         except ValueError:
             return render_template("erro.html")
       # sends the calculated result back to the template
